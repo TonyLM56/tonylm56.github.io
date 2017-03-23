@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset ="utf-8">
+		<link rel="stylesheet" href="styles/main.css">
+		<link rel="stylesheet" href="styles/slicknav.css">
+		<title></title>
+		<script src="js/jquery-1.11.2.min.js"></script>
+		<script src="js/jquery.slicknav.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+			});
+		</script>
+	</head>
+	<body>
+		<header>
+			<nav id="mobile_menu"></nav>
+			<nav id="nav_menu">
+				<ul>
+					<li>
+						<a href="index.html" class="current" title="Intro">Home</a>
+					</li>
+					<li>
+						<a href="dilemma.html" title="Dilemma">Tab 2</a>
+						<ul>
+							<li>
+								<a href="side_1.html" title="Side 1">Tab 3</a>
+							</li>
+							<li>
+								<a href="side_1.html" title="Side 1">Tab 3</a>
+							</li>
+							<li>
+								<a href="side_1.html" title="Side 1">Tab 3</a>
+							</li>
+							<li>
+								<a href="index.html" title="Intro">Intro</a>
+								<ul>
+									<li>
+										<a href="index.html" title="Intro">Tab 4</a>
+									</li>
+									<li>
+										<a href="side_2.html" title="Side 2">Tab 4</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="side_1.html" title="Side 1">Tab 3</a>
+							</li>
+							<li>
+								<a href="side_1.html" title="Side 1">Tab 3</a>
+							</li>
+						</ul>
+					</li>
+					
+					<li>
+						<a href="opinion.html" title="My Opinion">Tab 5</a>
+					</li>
+					<li>
+						<a href="impact.html" title="Impact">Tab 6</a>
+					</li>
+					<li>
+						<a href="conclusion.html" title="Conclusion">Tab 7</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<section>
+			
+		</section>
+		<footer>
+		
+		</footer>
+	</body>
+</html>

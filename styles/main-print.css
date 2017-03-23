@@ -1,0 +1,261 @@
+@media print {
+	article, aside, figure, footer, header, nav, section{
+		display: block;
+	}
+	* {
+		margin:0;
+		padding:0;
+	}
+	html {
+		font-family: Arial, Helvetica, sans-serif;
+		background-image: None;
+	}
+
+		/*Header and Nav Changes*/
+	header {
+		height: auto;
+	}
+	.border {
+		border-bottom: 2px solid black;
+		margin-bottom: .25in;
+	}
+	header h1 {
+		font-size: 200%;
+		font-style: normal;
+		padding: 0;
+		margin: 0 auto;
+		color: black;
+		text-shadow: black;
+		width: auto;
+		/*border: 1px solid black;*/
+	}
+	/*header h2 {
+		padding: 0;
+		margin: 0 auto;
+		margin-bottom: 92px;
+		font-weight: bold;
+		color: white;
+		font-size: 50px;
+		text-shadow:5px 5px 2px black;
+	}*/
+	nav {
+		display: none;
+		clear: left;
+		margin: 0;
+		padding: 0;
+		background-image: -moz-linear-gradient(
+			30deg, black 0%, hsla(184, 100%, 50%, 1) 90%);
+		background-image: -webkit-linear-gradient(
+			30deg, black 0%, hsla(184, 100%, 50%, 1) 90%);
+		background-image: -o-linear-gradient(
+			30deg, hsla(0, 100%, 45%, 0.8) 0%, hsla(40, 100%, 45%, 0.8) 90%);
+		background-image: linear-gradient(
+			30deg, black 0%, hsla(184, 100%, 50%, 1) 90%);
+	}
+	nav div {
+		display: block;
+		width: 582px;
+		margin: 0 auto;
+		padding: 0;
+		border-left: 2px solid #fffded;
+	}
+	nav a:link {
+		color: white;
+	}
+	nav a:visited {
+		color: white;
+	}
+	nav a:hover {
+		text-decoration: none;
+		font-style: oblique;
+	}
+	nav ul {
+		margin-left: 0;
+		margin-bottom: .5em;
+		list-style: none;
+		padding: 0.75em 2em 0.75em 0;
+	}
+	nav li {
+		display: inline;
+		padding: 0.75em 1.5em;
+		border-right: 2px solid #fffded;
+		font-weight: bold;
+	}
+	nav a.current {
+		color: hsla(110, 100%, 50%, 1);
+		text-decoration: none;
+		font-style: oblique;
+		font-weight: bold;
+	}
+	#title {
+		width: auto;
+		height: auto;
+		background-color: white;
+		padding: 0;
+	}
+		/*Section Changes*/
+	div.background {
+		width: 100%;
+		height: 100%;
+		background-image: none;
+		padding: 0;
+		}
+	section {
+		border: none;
+		height: auto;
+		width: auto;
+		margin: 0;
+		border-radius: none;
+		box-shadow: none;
+		background-color: white;
+		padding: 0;
+	}
+	section p {
+		padding-bottom: 10px;
+	}
+	section h1, p {
+		clear: both;
+	}
+	table {
+		border-collapse: collapse;
+		border: 1px solid black;
+	}
+	th,td {
+		border: 1px solid black;
+		padding: 5px 10px;
+		margin: 20px;
+	}
+	table thead {
+		background-image: -moz-linear-gradient(
+			30deg, hsla(0, 100%, 45%, 0.8) 0%, hsla(40, 100%, 45%, 0.8) 90%);
+		background-image: -webkit-linear-gradient(
+			30deg, hsla(0, 100%, 45%, 0.8) 0%, hsla(40, 100%, 45%, 0.8) 90%);
+		background-image: -o-linear-gradient(
+			30deg, hsla(0, 100%, 45%, 0.8) 0%, hsla(40, 100%, 45%, 0.8) 90%);
+		background-image: linear-gradient(
+			30deg, hsla(0, 100%, 45%, 0.8) 0%, hsla(40, 100%, 45%, 0.8) 90%);
+	}
+	table tbody tr:nth-child(2n) {
+		background-color: rgba(255, 121, 26, 0.9);
+	}
+	article {
+		float: left;
+		width: auto;
+		/*border: 1px solid black;*/
+		/*height: 600px;*/
+	}
+	article img {
+		display: none;
+		float: left;
+		padding: 0;
+	}
+	article h1{
+		font-size: 150%;
+		/*border: 1px solid black;*/
+	}
+	article a:link {
+		color: black;
+	}
+	article a:visited {
+		color: black;
+		text-decoration: none;
+	}
+	article a:hover {
+		color: blue;
+		font-style: oblique;
+		text-decoration: none;
+	}
+	aside {
+		display: none;
+		float: right;
+		width: 305px;
+		/*border: 1px solid black;*/
+		/*height: 580px;*/
+		padding: 0 10px 20px 10px;
+		background-image: -moz-linear-gradient(
+			30deg, black 0%, hsla(184, 100%, 50%, 1) 90%);
+		background-image: -webkit-linear-gradient(
+			30deg, black 0%, hsla(184, 100%, 50%, 1) 90%);
+		background-image: -o-linear-gradient(
+			30deg, hsla(0, 100%, 45%, 0.8) 0%, hsla(40, 100%, 45%, 0.8) 90%);
+		background-image: linear-gradient(
+			30deg, black 0%, hsla(184, 100%, 50%, 1) 90%);
+	}
+	#aside_bar a.current {
+		color: hsla(110, 100%, 50%, 1);
+		text-decoration: none;
+		font-style: oblique;
+		font-weight: bold;
+	}
+	#aside_bar h1{
+		font-size: 150%;
+		/*border: 1px solid black;*/
+		text-align: center;
+	}
+	aside ul li { margin: 0.5em;}
+	 
+	#aside_bar ul {
+		list-style: none;
+		margin-left: 0;
+		margin-bottom: 1.5em;
+		float: right;
+	}
+	#aside_bar li {
+		width: 135px;
+		margin-bottom: 0.5em;
+		/*border: 2px solid black;*/
+	}
+	#aside_bar li a {
+		display: block;
+		padding: 0.5em 0 0.5em 0.5em;
+		text-decoration: none;
+		font-weight: bold;
+		color: black;
+		background-color: hsla(0, 0%, 50%, 0.8);
+	}
+	#aside_bar a:hover{
+		font-style: oblique;
+		font-weight: bold;
+		color: white;
+		height: 125px;
+	}
+	#machu a:hover{ background-image: url(../images/machu_picchu.jpg);}
+	#nazca a:hover{ background-image: url(../images/nazca.jpg);}
+	#lima a:hover{ background-image: url(../images/lima.jpg);}
+	#s_valley a:hover{ background-image: url(../images/sacred_valley.jpg);}
+	#cusco a:hover{ background-image: url(../images/cusco.jpg);}
+	#arequipa a:hover{ background-image: url(../images/arequipa.jpg);}
+	#iquitos a:hover{ background-image: url(../images/iquitos.jpg); color: black;}
+	#trujillo a:hover{ background-image: url(../images/trujillo.jpg);}
+	#mancora a:hover{ background-image: url(../images/mancora.jpg); color: black;}
+	#puno a:hover{ background-image: url(../images/puno.jpg);}
+		/*Footer Changes*/
+	footer {
+		display: none;
+		color: white;
+		text-align: center;
+		background-image: -moz-linear-gradient(
+			30deg, black 0%, hsla(184, 100%, 50%, 1) 90%);
+		background-image: -webkit-linear-gradient(
+			30deg, black 0%, hsla(184, 100%, 50%, 1) 90%);
+		background-image: -o-linear-gradient(
+			30deg, hsla(0, 100%, 45%, 0.8) 0%, hsla(40, 100%, 45%, 0.8) 90%);
+		background-image: linear-gradient(
+			30deg, black 0%, hsla(184, 100%, 50%, 1) 90%);
+	}
+	footer p {
+		padding: 15px;
+	}
+	footer a:link, a:visited {
+		color: white;
+	}
+	footer a:hover {
+		text-decoration: none;
+		font-style: oblique;
+	}
+	footer a.current {
+		color: black;
+		text-decoration: none;
+		font-style: oblique;
+	}
+}/*End of print*/

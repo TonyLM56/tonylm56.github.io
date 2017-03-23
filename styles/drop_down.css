@@ -1,0 +1,74 @@
+#nav_menu ul {
+	width: 100%;
+	list-style-type: none;
+	position: relative;
+}
+
+#nav_menu ul ul{
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+
+#nav_menu ul ul li {
+	float: none;
+	position: relative;
+}
+
+#nav_menu ul ul li ul{
+	position: absolute;
+	left: 100%;
+	top: 0;
+}
+
+#nav_menu ul li.lastitem ul li ul {
+	position: absolute;
+	left: -100%;
+	top: 0;
+}
+
+#nav_menu ul {
+	margin: 0;
+	padding: 0;
+}
+
+#nav_menu ul li {
+	width: 20%;
+}
+
+#nav_menu ul li a {
+	text-align: center;
+	display: block;
+	padding: .7em 0;
+	background-color: #facd8a;
+}
+
+#nav_menu ul li a.current {
+	color: #f2972e !important;
+}
+
+#nav_menu ul li:hover ul {
+	width: 100%;
+}
+
+#nav_menu ul li:hover ul li:hover ul li {
+	width: 100%;
+}
+
+a.date_passed {
+	color: grey;
+}
+
+#nav_menu ul li {
+	float: left;
+}
+
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+
+#nav_menu > ul::after {
+	content: "";
+	clear: both;
+	display: block;
+}

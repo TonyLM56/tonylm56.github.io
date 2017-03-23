@@ -1,0 +1,200 @@
+a:link, a:visited {
+	color: #931420 !important;
+}
+
+a:hover, a:focus {
+	color: black !important;
+}
+#nav_menu ul {
+	width: 100%;
+	list-style-type: none;
+	position: relative;
+}
+
+#nav_menu ul li ul{
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+
+#nav_menu ul li ul li {
+	float: none;
+	position: relative;
+}
+
+#nav_menu ul li ul li ul{
+	position: absolute;
+	left: 100%;
+	top: 0;
+}
+
+#nav_menu ul li.lastitem ul li ul {
+	position: absolute;
+	left: -100%;
+	top: 0;
+}
+
+#nav_menu ul {
+	margin: 0;
+	padding: 0;
+}
+
+#nav_menu ul li {
+	width: 20%;
+}
+
+#nav_menu ul li a {
+	text-align: center;
+	display: block;
+	padding: .7em 0;
+	background-color: #facd8a;
+}
+
+#nav_menu ul li a.current {
+	color: #f2972e !important;
+}
+
+#nav_menu ul li:hover ul {
+	width: 20%;
+}
+
+#nav_menu ul li ul li {
+	width: 100%;
+}
+
+#nav_menu ul li ul li ul {
+	width: 100% !important;
+	background-color: #facd8a;
+}
+
+#nav_menu ul li:hover ul li:hover ul li {
+	width: 100%;
+}
+
+a.date_passed {
+	color: grey !important;
+}
+
+#nav_menu ul li {
+	float: left;
+}
+
+#nav_menu ul li:hover > ul {
+	display: block;
+}
+
+#nav_menu > ul::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+#mobile_menu {
+	display: none;
+}
+
+@media only screen and (max-width: 959px) {
+	#nav_menu ul li a {
+		font-size: 0.875em;
+	}
+	
+	aside h2 {
+		font-size: 1.125em;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	#nav_menu {
+		display: none;
+	}
+	
+	#mobile_menu {
+		display: block;
+	}
+	
+	.slicknav_menu {
+		background-color: #facd8a !important;
+	}
+	
+	body {
+		width: 100%;
+		margin: 0;
+		border: none;
+	}
+	
+	header, footer p {
+		text-align: center;
+	}
+	
+	footer p {
+		margin-left: 0;
+	}
+	
+	header h2 {
+		font-size: 1.625em;
+		margin: 0.4em 0 0.25em 0;
+	}
+	
+	header h3 {
+		font-size: 1em;
+		margin-left: 0;
+	}
+	
+	header img {
+		float: none;
+	}
+	
+	article {
+		width: 95.96%;
+		float: none;
+		margin-right: 2.02%;
+		padding-right: 0;
+	}
+	
+	article img {
+		float: left;
+		width: 50%;
+		margin-right: 2%;
+	}
+	
+	aside {
+		width: 91.92%;
+		float: none;
+		margin: 0 2.02% 2.02% 2.02%;
+	}
+}
+
+@media only screen and (max-width: 479px) {
+	header h2{
+		font-size: 1.375em;
+	}
+	
+	header h3 {
+		font-size: 0.8125em;
+	}
+	
+	p {
+		font-size: 0.8125em;
+	}
+	
+	article h1, aside h2 {
+		font-size: 1em;
+	}
+	
+	aside li {
+		font-size: 0.8125em;
+	}
+	
+	article img {
+		float: none;
+		width: 100%;
+		margin-right: 0;
+	}
+	
+	aside h3 {
+		font-size: 0.9375em;
+	}
+	
+	footer p {
+		font-size: 0.6875em;
+	}
+}

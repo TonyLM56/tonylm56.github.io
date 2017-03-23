@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset ="utf-8">
+		<title>Developers and Privacy</title>
+		<link rel="stylesheet" href="../styles/main.css">
+		<link rel="stylesheet" href="../styles/main-print.css">
+		<link rel="stylesheet" href="../styles/drop_down_RWD.css">
+		<link rel="stylesheet" href="../styles/slicknav.css">
+		<link rel="shortcut icon" href="../images/favicon (2).ico">
+		
+		<style>
+			fieldset label {
+				float: left;
+				width: 50%;
+				text-align: right;
+				margin: 1%;
+			}
+			input {
+				margin: 1%;
+				float: left;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<div id="title">
+				<h1 id="margin" class="border">Technology in 2015</h1>
+			</div>
+			<nav id="mobile_menu"></nav>
+			<nav id="nav_menu">
+				<ul>
+					<li>
+						<a href="../index.html" title="Home">Home</a>
+					</li>
+					<li>
+						<a href="../entertainment/index.html" title="Entertainment">Entertainment</a>
+						<ul>
+							<li>
+								<a href="../movies/index.html" title="Movies">Movies</a>
+							</li>
+							<li>
+								<a href="../entertainment/virtualReality.html" title="Virtual Reality">Virtual Reality</a>
+							</li>
+							<li>
+								<a href="index.html" title="Music">Music</a>
+							</li>
+							<li>
+								<a href="../entertainment/gaming.html" title="Gaming">Gaming</a>
+								<ul>
+									<li>
+										<a href="../entertainment/gaming/xboxOne.html" title="XBox One">XBox One</a>
+									</li>
+									<li>
+										<a href="../entertainment/gaming/ps4.html" title="PlayStation 4">PS4</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="../entertainment/tv.html" title="T.V.">T.V.</a>
+							</li>
+							<li>
+								<a href="../entertainment/computers.html" title="Computers">Computers</a>
+							</li>
+						</ul>
+					</li>
+					
+					<li>
+						<a href="../photography/index.html" title="Photography">Photography</a>
+					</li>
+					<li>
+						<a href="../medicine/index.html" title="Medicine">Medicine</a>
+					</li>
+					<li>
+						<a href="../mobileDevices/index.html" title="Mobile Devices">Mobile Devices</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<div class="background">
+			<section>
+				<article>
+					<form name = "favoriteSong" action="thankYou.html" onsubmit="return validateForm();" class = "border">
+						<fieldset>
+							<legend>Tell us a bit about you</legend>
+								<label for = "email">Please enter your email address:</label>
+									<input type = "text" name = "email" id = "email" placeholder = "Enter Email" required title = "Please include an '@' in the email address. 'fnjsnf' is missing an '@'.">
+								<label for = "song">What is your favorite song?:</label>
+									<input type = "text" name = "song" id = "song" placeholder = "Enter Song" required>		
+						</fieldset>
+						
+						<input type = "submit" name = "Submit" value = "submit">
+						<input type = "reset" name = "resetForm" value = "Reset">
+					</form>
+				</article>
+				<aside id="aside_bar">
+					<h1><a href="../navigation/index.html"><u>Menu Bar</u></a></h1>
+					<ul>
+						<li><a href="page1.html" target="_" title="Page 1">Page 1</a></li>
+						<li><a href="page2.html" target="_" title="Page 2">Page 2</a></li>
+						<li><a href="page3.html" target="_" title="Page 3">Page 3</a></li>
+						<li><a href="page4.html" target="_" title="Page 4">Page 4</a></li>
+						<li><a href="page5.html" target="_" title="Page 5">Page 5</a></li>
+					</ul>
+					<ul>
+						<li><a href="page6.html" target="_" title="Page 6">Page 6</a></li>
+						<li><a href="page7.html" target="_" title="Page 7">Page 7</a></li>
+						<li><a href="page8.html" target="_" title="Page 8">Page 8</a></li>
+						<li><a href="page9.html" target="_" title="Page 9">Page 9</a></li>
+						<li><a href="page10.html" target="_" title="Page 10">Page 10</a></li>
+					</ul>
+				</aside>
+			</section>
+		</div>
+		<footer>
+			<p><b>&copy; Copyright 2015 Anthony Mendez</b><br>About the Designer <a href="../About_me/About_me.html" title="About the Designer" target="_">Anthony Mendez</a></p>
+		</footer>
+		<script src="../js/jquery-1.11.2.min.js"></script>
+		<script src="../js/jquery.slicknav.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+			});
+		</script>
+		<script>
+			function validateForm() {
+				var x = document.forms["favoriteSong"]["email"].value;
+				var atpos = x.indexOf("@");
+				var dotpos = x.lastIndexOf(".");
+				if (atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length) {
+					alert("Not a valid e-mail address");
+					return false;
+				}
+			}
+		</script>
+	</body>
+</html>
